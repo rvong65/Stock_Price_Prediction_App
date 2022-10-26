@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  margin: 0;
+  font-family: Poppins;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #162341;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
