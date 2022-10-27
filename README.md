@@ -1,6 +1,9 @@
 # 📈 Stock Price Prediction App
 This is a machine-learning based web application built using Django, React, and TensorFlow. To use the app, the user first starts with signing up for an account by creating a username and a password. The user will then be logged into the main interface where they will need to input a stock ticker and a date in the future. A text box will then appear that will display a predicted price for that date. 
 
+## Demonstration
+https://user-images.githubusercontent.com/87782709/198345046-59d4e0e8-c350-4180-b7e5-ca788ab365bc.mp4
+
 ## Login Page
 ![image](https://user-images.githubusercontent.com/87782709/198062961-8ffb60a1-339e-41fa-b96b-f4232b5e9fec.png)
 
