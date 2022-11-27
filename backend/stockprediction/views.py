@@ -11,7 +11,7 @@ from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
 from django.db import IntegrityError
 
-# Create your views here.
+# Send the model's response
 class SendTextInputView(APIView):
     def post(self, request, format="json"): 
         try:
@@ -59,7 +59,8 @@ class SendTextInputView(APIView):
             return Response(predicted_price)
         except: 
             return Response("Failed")
-
+        
+#Enable the user to create an account
 class SignUpView(APIView):
     def post(self, request, format="json"):
         request_data = dict(request.data)
@@ -75,7 +76,8 @@ class SignUpView(APIView):
                 return Response("Failed")
         except IntegrityError:
             return Response("Duplicate")
-
+        
+#Enable the user to log in
 class LoginView(APIView):
     def post(self, request, format="json"):
         username = request.POST['username']
