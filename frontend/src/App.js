@@ -30,16 +30,19 @@ class App extends Component{
     this.predictStockPrice = this.predictStockPrice.bind(this);
   }; 
 
+  // Get stock ticker input
   onChangeStockTicker = (event) => {
     console.log(event.target.value);
     this.setState({stock_ticker: event.target.value})
   }
 
+  //Get date input
   onChangeDate = (event) => {
     console.log(event.target.value);
     this.setState({date: event.target.value})
   }
 
+  //Change route
   onChangeRoute = (route) =>{
     if(route === "signOut"){
       this.setState({isSignedIn: false, route: "signIn", priceOutput: ""});
@@ -49,6 +52,7 @@ class App extends Component{
     this.setState({route: route})}
   }
 
+  //Send inputs to model 
   predictStockPrice = async() =>{
     this.setState({parsed_date: "", 
     priceOutput: "", loadingInput: true
