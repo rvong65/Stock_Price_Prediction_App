@@ -32,13 +32,11 @@ class App extends Component{
 
   // Get stock ticker input
   onChangeStockTicker = (event) => {
-    console.log(event.target.value);
     this.setState({stock_ticker: event.target.value})
   }
 
   //Get date input
   onChangeDate = (event) => {
-    console.log(event.target.value);
     this.setState({date: event.target.value})
   }
 
